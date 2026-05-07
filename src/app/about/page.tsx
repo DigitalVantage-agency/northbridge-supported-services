@@ -142,7 +142,7 @@ export default function About() {
       </section>
 
       {/* CTA Band */}
-      <div className="cta-band bg-amber on-amber">
+      <div className="cta-band bg-lime on-lime">
         <div className="container">
           <div className="cta-band-inner">
             <div className="cta-band-copy reveal">

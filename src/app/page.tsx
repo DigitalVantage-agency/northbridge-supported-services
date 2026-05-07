@@ -99,7 +99,7 @@ export default function Home() {
       </section>
 
       {/* Pull Quote */}
-      <section className="pull-quote bg-burnt on-burnt">
+      <section className="pull-quote bg-olive on-dark">
         <div className="container">
           <p className="pull-quote-text reveal">&ldquo;Our measure of success is not how long someone stays with us, but how confidently they move forward without us.&rdquo;</p>
           <span className="pull-quote-attr reveal reveal-d1">NorthBridge Support Services · Leeds</span>
@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* CTA Band */}
-      <div className="cta-band bg-amber on-amber">
+      <div className="cta-band bg-lime on-lime">
         <div className="container">
           <div className="cta-band-inner">
             <div className="cta-band-copy reveal">
