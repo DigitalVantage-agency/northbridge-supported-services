@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import BoxesBackground from '@/components/BoxesBackground';
 import ScrollReveal from '@/components/ScrollReveal';
 import GlowCard from '@/components/GlowCard';
+import ShaderPageHero from '@/components/ShaderPageHero';
 
 export const metadata: Metadata = {
   title: 'About Northbridge | Leading Supported Living Provider in Leeds',
@@ -16,16 +16,11 @@ export default function About() {
       <ScrollReveal />
 
       {/* Page Hero */}
-      <section className="page-hero">
-        <BoxesBackground />
-        <div className="container">
-          <div className="page-hero-content">
-            <div className="page-hero-eyebrow"><span>Our Story</span></div>
-            <h1>Professional Support.<br />People-First Values.</h1>
-            <p>We believe the right support should act as a catalyst — not a dependency. Everything we do is designed to build capability, confidence, and lasting independence.</p>
-          </div>
-        </div>
-      </section>
+      <ShaderPageHero
+        eyebrow="Our Story"
+        title={<>Professional Support.<br />People-First Values.</>}
+        description="We believe the right support should act as a catalyst — not a dependency. Everything we do is designed to build capability, confidence, and lasting independence."
+      />
 
       {/* Philosophy */}
       <section className="section bg-dark on-dark">

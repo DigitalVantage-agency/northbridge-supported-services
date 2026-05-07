@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import BoxesBackground from '@/components/BoxesBackground';
 import ScrollReveal from '@/components/ScrollReveal';
 import GlowCard from '@/components/GlowCard';
+import ShaderPageHero from '@/components/ShaderPageHero';
 
 export const metadata: Metadata = {
   title: 'Independent Living Services Leeds | Northbridge Support Services',
@@ -83,16 +83,11 @@ export default function Services() {
       <ScrollReveal />
 
       {/* Page Hero */}
-      <section className="page-hero">
-        <BoxesBackground />
-        <div className="container">
-          <div className="page-hero-content">
-            <div className="page-hero-eyebrow"><span>What We Offer</span></div>
-            <h1>Coaching for<br />Independence</h1>
-            <p>Our staff act as Independent Living Coaches — providing tailored, practical support to help residents navigate the complexities of modern life with skill and confidence.</p>
-          </div>
-        </div>
-      </section>
+      <ShaderPageHero
+        eyebrow="What We Offer"
+        title={<>Coaching for<br />Independence</>}
+        description="Our staff act as Independent Living Coaches — providing tailored, practical support to help residents navigate the complexities of modern life with skill and confidence."
+      />
 
       {/* Services Grid */}
       <section className="section bg-dark on-dark">

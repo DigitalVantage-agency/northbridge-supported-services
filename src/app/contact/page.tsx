@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import BoxesBackground from '@/components/BoxesBackground';
 import ScrollReveal from '@/components/ScrollReveal';
 import GlowCard from '@/components/GlowCard';
+import ShaderPageHero from '@/components/ShaderPageHero';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -13,16 +13,11 @@ export default function Contact() {
       <ScrollReveal />
 
       {/* Page Hero */}
-      <section className="page-hero">
-        <BoxesBackground />
-        <div className="container">
-          <div className="page-hero-content">
-            <div className="page-hero-eyebrow"><span>Reach Out</span></div>
-            <h1>We Welcome<br />Your Enquiries</h1>
-            <p>Whether you are an individual, a family member, or a healthcare professional — we are here to discuss how Northbridge can support a journey toward independence.</p>
-          </div>
-        </div>
-      </section>
+      <ShaderPageHero
+        eyebrow="Reach Out"
+        title={<>We Welcome<br />Your Enquiries</>}
+        description="Whether you are an individual, a family member, or a healthcare professional — we are here to discuss how Northbridge can support a journey toward independence."
+      />
 
       {/* Contact Form */}
       <section className="section bg-dark on-dark">
