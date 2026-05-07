@@ -188,33 +188,42 @@ ul { list-style: none; }
 .nav-logo span { color: var(--clr-dark-raised); }
 #nav.scrolled .nav-logo span { color: rgba(243,247,243,0.65); }
 
-/* ── Desktop links ───────────────────────────────────────── */
+/* ── Desktop links (nav-header sliding cursor pattern) ──── */
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 28px;
-  margin-right: 24px;
+  gap: 2px;                /* tight — padding lives on each li */
+  margin-right: 16px;
+  position: relative;      /* contains the absolute-positioned cursor */
+  list-style: none;
+}
+.nav-links li {
+  position: relative;
+  z-index: 1;              /* sit above the sliding cursor */
 }
 .nav-links a {
-  font-size: 0.73rem;
+  display: block;
+  font-size: 0.72rem;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
-  color: rgba(57,86,60,0.55);
-  text-shadow: 0 1px 4px rgba(243,247,243,0.7);
-  transition: color 0.2s, text-shadow 0.2s;
+  color: rgba(57,86,60,0.60);
+  text-shadow: 0 1px 4px rgba(243,247,243,0.65);
+  transition: color 0.2s var(--ease), text-shadow 0.2s var(--ease);
   white-space: nowrap;
   position: relative;
-  padding-bottom: 2px;
+  padding: 7px 14px;       /* breathing room for the cursor pill */
+  border-radius: var(--r-pill);
 }
 #nav.scrolled .nav-links a {
-  color: rgba(243,247,243,0.55);
+  color: rgba(243,247,243,0.58);
   text-shadow: none;
 }
+/* Active dot indicator — below the active link */
 .nav-links a::after {
   content: '';
   position: absolute;
-  bottom: -6px;
+  bottom: 1px;
   left: 50%;
   transform: translateX(-50%) scale(0);
   width: 4px;
@@ -229,6 +238,24 @@ ul { list-style: none; }
 #nav.scrolled .nav-links a:hover,
 #nav.scrolled .nav-links a.active { color: var(--clr-lime); }
 .nav-links a.active::after { transform: translateX(-50%) scale(1); }
+
+/* Framer Motion sliding cursor pill */
+.nav-cursor {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 32px;
+  border-radius: var(--r-pill);
+  background: rgba(57, 86, 60, 0.14);
+  border: 1px solid rgba(57, 86, 60, 0.22);
+  pointer-events: none;
+  list-style: none;
+}
+#nav.scrolled .nav-cursor {
+  background: rgba(243, 247, 243, 0.14);
+  border-color: rgba(243, 247, 243, 0.16);
+}
 
 /* ── CTA pill-inside-pill ────────────────────────────────── */
 .nav-cta {
