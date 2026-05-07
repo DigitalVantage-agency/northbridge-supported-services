@@ -24,8 +24,8 @@ export default function Navbar() {
       <div className="nav-pill">
 
         {/* Logo */}
-        <Link href="/" className="nav-logo" aria-label="NorthBridge home">
-          North<span>Bridge</span>
+        <Link href="/" className="nav-logo" aria-label="Northbridge home">
+          North<span>bridge</span>
         </Link>
 
         {/* Desktop links */}

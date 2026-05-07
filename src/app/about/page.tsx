@@ -6,8 +6,8 @@ import ScrollReveal from '@/components/ScrollReveal';
 import GlowCard from '@/components/GlowCard';
 
 export const metadata: Metadata = {
-  title: 'About NorthBridge | Leading Supported Living Provider in Leeds',
-  description: "Learn about the NorthBridge 'Separation of Care' model and our commitment to dignity, independence, and professional coaching in Leeds.",
+  title: 'About Northbridge | Leading Supported Living Provider in Leeds',
+  description: "Learn about the Northbridge 'Separation of Care' model and our commitment to dignity, independence, and professional coaching in Leeds.",
 };
 
 export default function About() {
@@ -34,10 +34,10 @@ export default function About() {
             <div className="philosophy-sticky reveal">
               <div className="section-label"><span>Philosophy</span></div>
               <h2 className="section-title">Built on Respect &amp; Expertise</h2>
-              <p className="section-body">At NorthBridge, we combine professional rigour with genuine warmth — creating environments where individuals don&apos;t just survive, but genuinely flourish.</p>
+              <p className="section-body">At Northbridge, we combine professional rigour with genuine warmth — creating environments where individuals don&apos;t just survive, but genuinely flourish.</p>
               <Image
                 src="/images/patrick-perkins-3wylDrjxH-E-unsplash.jpg"
-                alt="NorthBridge coaching approach"
+                alt="Northbridge coaching approach"
                 width={400}
                 height={300}
                 className="philosophy-img"
@@ -46,11 +46,11 @@ export default function About() {
             </div>
             <div className="philosophy-content">
               <div className="reveal">
-                <p>At NorthBridge Support Services, we believe that the right support should act as a catalyst for personal growth. Our philosophy is built upon providing expert coaching that respects the dignity and autonomy of every resident — treating each person not as a case, but as an individual with unique goals and potential.</p>
+                <p>At Northbridge Support Services, we believe that the right support should act as a catalyst for personal growth. Our philosophy is built upon providing expert coaching that respects the dignity and autonomy of every resident — treating each person not as a case, but as an individual with unique goals and potential.</p>
                 <p>We are committed to a model of care that is non-intrusive, professional, and ultimately aimed at making itself unnecessary. Our measure of success is not how long someone stays with us, but how confidently they move forward without us.</p>
               </div>
 
-              <h3 className="reveal reveal-d1">The NorthBridge Model</h3>
+              <h3 className="reveal reveal-d1">The Northbridge Model</h3>
               <p className="reveal reveal-d1">We operate a <strong>&lsquo;Separation of Care&rsquo;</strong> model to ensure the highest standards of professional integrity and resident continuity. By keeping housing support and personal care functions legally distinct, we allow our residents to remain in their homes even if their clinical or care needs evolve over time.</p>
               <p className="reveal reveal-d2">This approach gives residents the stability of a consistent, familiar home environment whilst ensuring they always receive the appropriate level of care from the most suitable professionals.</p>
 
@@ -91,7 +91,7 @@ export default function About() {
               </div>
 
               <h3 className="reveal" style={{ marginTop: 48 }}>Our Commitment to Leeds</h3>
-              <p className="reveal reveal-d1">NorthBridge is proudly rooted in Leeds. We understand the local housing landscape, the community networks, and the pathways available to our residents. Our goal is to ensure that every person we support feels genuinely connected to — and capable of thriving within — their local community.</p>
+              <p className="reveal reveal-d1">Northbridge is proudly rooted in Leeds. We understand the local housing landscape, the community networks, and the pathways available to our residents. Our goal is to ensure that every person we support feels genuinely connected to — and capable of thriving within — their local community.</p>
               <p className="reveal reveal-d2">We work closely with housing associations, local authorities, and healthcare providers across the city to offer a truly integrated support experience.</p>
             </div>
           </div>

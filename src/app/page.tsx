@@ -36,7 +36,7 @@ export default function Home() {
           />
         </div>
         <div className="split-content">
-          <span className="split-tag">About NorthBridge</span>
+          <span className="split-tag">About Northbridge</span>
           <h2 className="split-title">Scaffolding for<br />Independent Life</h2>
           <p className="split-body">Like scaffolding on a building, our support is structured and purposeful — and designed to be removed once the work is done. We measure our success by how confidently residents move forward without us.</p>
           <div className="split-stats">
@@ -102,7 +102,7 @@ export default function Home() {
       <section className="pull-quote bg-olive on-dark">
         <div className="container">
           <p className="pull-quote-text reveal">&ldquo;Our measure of success is not how long someone stays with us, but how confidently they move forward without us.&rdquo;</p>
-          <span className="pull-quote-attr reveal reveal-d1">NorthBridge Support Services · Leeds</span>
+          <span className="pull-quote-attr reveal reveal-d1">Northbridge Support Services · Leeds</span>
         </div>
       </section>
 
@@ -112,7 +112,7 @@ export default function Home() {
           <div className="cta-band-inner">
             <div className="cta-band-copy reveal">
               <h2>Ready to Find Out More?</h2>
-              <p>Speak with our team about how NorthBridge can support you, a family member, or a client.</p>
+              <p>Speak with our team about how Northbridge can support you, a family member, or a client.</p>
             </div>
             <Link href="/contact" className="btn btn-sage btn-arrow reveal reveal-d2">Get in Touch</Link>
           </div>

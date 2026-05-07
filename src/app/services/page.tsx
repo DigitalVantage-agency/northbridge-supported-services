@@ -5,7 +5,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 import GlowCard from '@/components/GlowCard';
 
 export const metadata: Metadata = {
-  title: 'Independent Living Services Leeds | NorthBridge Support Services',
+  title: 'Independent Living Services Leeds | Northbridge Support Services',
   description: 'Explore our housing-related support services in Leeds — tenancy management, financial literacy, life-skills coaching, and more.',
 };
 
@@ -114,7 +114,7 @@ export default function Services() {
           </div>
 
           <div className="service-note reveal" style={{ marginTop: 52 }}>
-            <strong>Important Note:</strong> In accordance with our Statement of Purpose and the NorthBridge model, we do not provide regulated personal care — such as assistance with personal hygiene, dressing, or clinical tasks. Where personal care needs arise, we facilitate referrals to appropriate CQC-registered providers.
+            <strong>Important Note:</strong> In accordance with our Statement of Purpose and the Northbridge model, we do not provide regulated personal care — such as assistance with personal hygiene, dressing, or clinical tasks. Where personal care needs arise, we facilitate referrals to appropriate CQC-registered providers.
           </div>
         </div>
       </section>

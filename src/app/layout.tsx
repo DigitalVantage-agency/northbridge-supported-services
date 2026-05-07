@@ -21,9 +21,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "NorthBridge Support Services | Supported Living Leeds",
+  title: "Northbridge Support Services | Supported Living Leeds",
   description:
-    "NorthBridge provides high-end supported living environments in Leeds, built on respect, professional coaching, and a genuine commitment to independence.",
+    "Northbridge provides high-end supported living environments in Leeds, built on respect, professional coaching, and a genuine commitment to independence.",
 };
 
 export default function RootLayout({

@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2026 NorthBridge Support Services Ltd. All rights reserved.</p>
+          <p>&copy; 2026 Northbridge Support Services Ltd. All rights reserved.</p>
           <span>Housing-Related Support · Leeds</span>
         </div>
       </div>

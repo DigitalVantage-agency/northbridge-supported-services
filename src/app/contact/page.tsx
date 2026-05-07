@@ -19,7 +19,7 @@ export default function Contact() {
           <div className="page-hero-content">
             <div className="page-hero-eyebrow"><span>Reach Out</span></div>
             <h1>We Welcome<br />Your Enquiries</h1>
-            <p>Whether you are an individual, a family member, or a healthcare professional — we are here to discuss how NorthBridge can support a journey toward independence.</p>
+            <p>Whether you are an individual, a family member, or a healthcare professional — we are here to discuss how Northbridge can support a journey toward independence.</p>
           </div>
         </div>
       </section>
@@ -82,7 +82,7 @@ export default function Contact() {
       <section className="pull-quote bg-olive on-dark">
         <div className="container">
           <p className="pull-quote-text reveal">&ldquo;We welcome enquiries from individuals, families, and professionals. Every conversation starts with listening.&rdquo;</p>
-          <span className="pull-quote-attr reveal reveal-d1">NorthBridge Support Services · Leeds</span>
+          <span className="pull-quote-attr reveal reveal-d1">Northbridge Support Services · Leeds</span>
         </div>
       </section>
     </>
