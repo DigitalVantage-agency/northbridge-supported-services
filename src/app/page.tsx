@@ -57,7 +57,7 @@ export default function Home() {
       </section>
 
       {/* Pillars */}
-      <section className="section bg-olive on-dark">
+      <section className="section bg-lime on-lime">
         <div className="container">
           <div style={{ textAlign: 'center' }} className="reveal">
             <div className="section-label" style={{ justifyContent: 'center' }}><span>Our Promise</span></div>
@@ -99,7 +99,7 @@ export default function Home() {
       </section>
 
       {/* Pull Quote */}
-      <section className="pull-quote bg-olive on-dark">
+      <section className="pull-quote bg-dark on-dark">
         <div className="container">
           <p className="pull-quote-text reveal">&ldquo;Our measure of success is not how long someone stays with us, but how confidently they move forward without us.&rdquo;</p>
           <span className="pull-quote-attr reveal reveal-d1">Northbridge Support Services · Leeds</span>

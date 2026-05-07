@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-top">
           <div className="footer-about">
-            <Link href="/" className="footer-logo">North<span>Bridge</span></Link>
+            <Link href="/" className="footer-logo">North<span>bridge</span></Link>
             <p>Providing high-end supported living environments in Leeds, built on respect, professional coaching, and a genuine commitment to independence.</p>
             <span className="footer-tagline">Professionalism. Independence. Dignity.</span>
           </div>

@@ -79,7 +79,7 @@ export default function Contact() {
       </section>
 
       {/* Pull Quote */}
-      <section className="pull-quote bg-olive on-dark">
+      <section className="pull-quote bg-lime on-lime">
         <div className="container">
           <p className="pull-quote-text reveal">&ldquo;We welcome enquiries from individuals, families, and professionals. Every conversation starts with listening.&rdquo;</p>
           <span className="pull-quote-attr reveal reveal-d1">Northbridge Support Services · Leeds</span>

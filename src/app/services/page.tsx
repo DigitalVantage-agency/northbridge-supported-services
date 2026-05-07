@@ -120,7 +120,7 @@ export default function Services() {
       </section>
 
       {/* How It Works */}
-      <section className="section bg-olive on-dark">
+      <section className="section bg-lime on-lime">
         <div className="container">
           <div style={{ textAlign: 'center' }} className="reveal">
             <div className="section-label" style={{ justifyContent: 'center' }}><span>Our Approach</span></div>

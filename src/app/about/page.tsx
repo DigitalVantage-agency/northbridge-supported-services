@@ -99,7 +99,7 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="section bg-olive on-dark">
+      <section className="section bg-lime on-lime">
         <div className="container">
           <div style={{ textAlign: 'center' }} className="reveal">
             <div className="section-label" style={{ justifyContent: 'center' }}><span>What We Stand For</span></div>
