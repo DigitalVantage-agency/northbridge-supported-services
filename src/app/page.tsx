@@ -25,7 +25,7 @@ export default function Home() {
       </div>
 
       {/* Split — About Preview */}
-      <section className="split bg-green on-dark">
+      <section className="split bg-dark on-dark">
         <div className="split-image">
           <Image
             src="/images/vitaly-gariev-oKd3gF2ZXMY-unsplash.jpg"
@@ -57,7 +57,7 @@ export default function Home() {
       </section>
 
       {/* Pillars */}
-      <section className="section bg-sage on-sage">
+      <section className="section bg-olive on-dark">
         <div className="container">
           <div style={{ textAlign: 'center' }} className="reveal">
             <div className="section-label" style={{ justifyContent: 'center' }}><span>Our Promise</span></div>
@@ -99,7 +99,7 @@ export default function Home() {
       </section>
 
       {/* Pull Quote */}
-      <section className="pull-quote bg-forest on-dark">
+      <section className="pull-quote bg-burnt on-burnt">
         <div className="container">
           <p className="pull-quote-text reveal">&ldquo;Our measure of success is not how long someone stays with us, but how confidently they move forward without us.&rdquo;</p>
           <span className="pull-quote-attr reveal reveal-d1">NorthBridge Support Services · Leeds</span>
@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* CTA Band */}
-      <div className="cta-band bg-cream on-cream">
+      <div className="cta-band bg-amber on-amber">
         <div className="container">
           <div className="cta-band-inner">
             <div className="cta-band-copy reveal">

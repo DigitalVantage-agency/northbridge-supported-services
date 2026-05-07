@@ -25,7 +25,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Form */}
-      <section className="section bg-green on-dark">
+      <section className="section bg-dark on-dark">
         <div className="container">
           <div style={{ maxWidth: 680, margin: '0 auto' }}>
             <GlowCard className="reveal" innerClassName="contact-form-card">
@@ -79,7 +79,7 @@ export default function Contact() {
       </section>
 
       {/* Pull Quote */}
-      <section className="pull-quote bg-sage on-sage">
+      <section className="pull-quote bg-olive on-dark">
         <div className="container">
           <p className="pull-quote-text reveal">&ldquo;We welcome enquiries from individuals, families, and professionals. Every conversation starts with listening.&rdquo;</p>
           <span className="pull-quote-attr reveal reveal-d1">NorthBridge Support Services · Leeds</span>

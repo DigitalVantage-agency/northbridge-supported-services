@@ -95,7 +95,7 @@ export default function Services() {
       </section>
 
       {/* Services Grid */}
-      <section className="section bg-green on-dark">
+      <section className="section bg-dark on-dark">
         <div className="container">
           <div className="services-intro reveal">
             <div className="section-label" style={{ justifyContent: 'center' }}><span>Our Core Service Areas</span></div>
@@ -120,7 +120,7 @@ export default function Services() {
       </section>
 
       {/* How It Works */}
-      <section className="section bg-sage on-sage">
+      <section className="section bg-olive on-dark">
         <div className="container">
           <div style={{ textAlign: 'center' }} className="reveal">
             <div className="section-label" style={{ justifyContent: 'center' }}><span>Our Approach</span></div>
@@ -163,7 +163,7 @@ export default function Services() {
       </section>
 
       {/* CTA Band */}
-      <div className="cta-band bg-cream on-cream">
+      <div className="cta-band bg-amber on-amber">
         <div className="container">
           <div className="cta-band-inner">
             <div className="cta-band-copy reveal">
