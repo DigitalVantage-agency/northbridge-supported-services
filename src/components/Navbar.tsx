@@ -55,10 +55,13 @@ export default function Navbar() {
             </NavTab>
           ))}
 
-          {/* Framer Motion sliding pill — the nav-header magic */}
+          {/* Framer Motion sliding pill — the nav-header magic.
+               Vertical centering via style (not CSS transform) because
+               FM owns the transform property on motion.* elements.   */}
           <motion.li
             aria-hidden="true"
             className="nav-cursor"
+            style={{ top: 0, bottom: 0, margin: 'auto' }}
             animate={{ left: cursor.left, width: cursor.width, opacity: cursor.opacity }}
             transition={{ type: 'spring', stiffness: 380, damping: 30 }}
           />

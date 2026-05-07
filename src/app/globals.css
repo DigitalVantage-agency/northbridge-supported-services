@@ -192,14 +192,18 @@ ul { list-style: none; }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2px;                /* tight — padding lives on each li */
+  gap: 2px;
   margin-right: 16px;
-  position: relative;      /* contains the absolute-positioned cursor */
+  padding: 0;
+  position: relative;      /* contains the absolute cursor */
   list-style: none;
+  align-self: stretch;     /* fill full 52px pill height → lets cursor centre cleanly */
 }
 .nav-links li {
   position: relative;
-  z-index: 1;              /* sit above the sliding cursor */
+  z-index: 1;              /* above the sliding cursor */
+  display: flex;
+  align-items: center;
 }
 .nav-links a {
   display: block;
@@ -212,18 +216,17 @@ ul { list-style: none; }
   transition: color 0.2s var(--ease), text-shadow 0.2s var(--ease);
   white-space: nowrap;
   position: relative;
-  padding: 7px 14px;       /* breathing room for the cursor pill */
-  border-radius: var(--r-pill);
+  padding: 6px 14px;
 }
 #nav.scrolled .nav-links a {
   color: rgba(243,247,243,0.58);
   text-shadow: none;
 }
-/* Active dot indicator — below the active link */
+/* Active dot */
 .nav-links a::after {
   content: '';
   position: absolute;
-  bottom: 1px;
+  bottom: 2px;
   left: 50%;
   transform: translateX(-50%) scale(0);
   width: 4px;
@@ -239,22 +242,27 @@ ul { list-style: none; }
 #nav.scrolled .nav-links a.active { color: var(--clr-lime); }
 .nav-links a.active::after { transform: translateX(-50%) scale(1); }
 
-/* Framer Motion sliding cursor pill */
+/* ── Sliding cursor pill ─────────────────────────────────────
+   NO transform: translateY() here — Framer Motion owns the
+   transform property on motion.* elements and would silently
+   discard it. Vertical centring is handled by top/bottom/margin
+   so FM only needs to animate left, width, opacity.            */
 .nav-cursor {
   position: absolute;
   z-index: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  bottom: 0;
+  margin: auto;            /* vertically centres within the stretch-filled ul */
   height: 32px;
   border-radius: var(--r-pill);
-  background: rgba(57, 86, 60, 0.14);
-  border: 1px solid rgba(57, 86, 60, 0.22);
+  background: rgba(57, 86, 60, 0.13);
+  border: 1px solid rgba(57, 86, 60, 0.20);
   pointer-events: none;
   list-style: none;
 }
 #nav.scrolled .nav-cursor {
-  background: rgba(243, 247, 243, 0.14);
-  border-color: rgba(243, 247, 243, 0.16);
+  background: rgba(243, 247, 243, 0.13);
+  border-color: rgba(243, 247, 243, 0.18);
 }
 
 /* ── CTA pill-inside-pill ────────────────────────────────── */
