@@ -113,16 +113,19 @@ body::after {
   top: 0; left: 0; right: 0;
   z-index: 900;
   height: var(--nav-h);
-  background: rgba(40, 54, 24, 0.35);
-  backdrop-filter: blur(32px) saturate(1.9);
-  -webkit-backdrop-filter: blur(32px) saturate(1.9);
-  border-bottom: 1px solid rgba(254, 250, 224, 0.06);
-  transition: background 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.4s var(--ease);
+  background: rgba(40, 54, 24, 0.08);
+  backdrop-filter: blur(48px) saturate(2.4) brightness(1.06);
+  -webkit-backdrop-filter: blur(48px) saturate(2.4) brightness(1.06);
+  border-bottom: 1px solid rgba(254, 250, 224, 0.1);
+  box-shadow: 0 1px 0 rgba(221, 161, 94, 0.08), inset 0 1px 0 rgba(254, 250, 224, 0.06);
+  transition: background 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.4s var(--ease), backdrop-filter 0.4s var(--ease);
 }
 #nav.scrolled {
-  background: rgba(40, 54, 24, 0.92);
-  box-shadow: 0 4px 40px rgba(40, 54, 24, 0.45);
-  border-bottom-color: rgba(221, 161, 94, 0.18);
+  background: rgba(40, 54, 24, 0.55);
+  backdrop-filter: blur(56px) saturate(2.8) brightness(0.98);
+  -webkit-backdrop-filter: blur(56px) saturate(2.8) brightness(0.98);
+  box-shadow: 0 4px 40px rgba(40, 54, 24, 0.35), inset 0 1px 0 rgba(254, 250, 224, 0.08);
+  border-bottom-color: rgba(221, 161, 94, 0.2);
 }
 .nav-inner {
   height: 100%;
@@ -179,7 +182,7 @@ body::after {
 .nav-cta-btn:hover { background: var(--clr-burnt) !important; color: var(--clr-cream) !important; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(188,108,37,0.4) !important; }
 .nav-hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; min-width: 44px; min-height: 44px; justify-content: center; align-items: center; }
 .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--clr-cream); transition: all 0.3s; transform-origin: center; }
-.nav-mobile { display: none; flex-direction: column; background: rgba(40,54,24,0.97); backdrop-filter: blur(24px); padding: 24px clamp(1.5rem,5vw,3rem) 32px; border-top: 1px solid rgba(221,161,94,0.12); }
+.nav-mobile { display: none; flex-direction: column; background: rgba(40,54,24,0.72); backdrop-filter: blur(56px) saturate(2.4); -webkit-backdrop-filter: blur(56px) saturate(2.4); padding: 24px clamp(1.5rem,5vw,3rem) 32px; border-top: 1px solid rgba(221,161,94,0.14); }
 .nav-mobile a { padding: 13px 0; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(254,250,224,0.65); border-bottom: 1px solid rgba(254,250,224,0.07); transition: color 0.2s; }
 .nav-mobile a:last-child { border-bottom: none; }
 .nav-mobile a.active, .nav-mobile a:hover { color: var(--clr-amber); }
