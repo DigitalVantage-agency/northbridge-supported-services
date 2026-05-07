@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import HeroSlider from '@/components/HeroSlider';
 import ScrollReveal from '@/components/ScrollReveal';
+import GlowCard from '@/components/GlowCard';
 
 const marqueeItems = [
   'Tenancy Management', 'Financial Literacy', 'Life Skills Coaching',
@@ -63,7 +64,7 @@ export default function Home() {
             <h2 className="section-title">Three Pillars of<br />Supported Living</h2>
           </div>
           <div className="pillars-grid">
-            <div className="pillar-card reveal reveal-d1">
+            <GlowCard className="reveal reveal-d1" innerClassName="pillar-card">
               <span className="pillar-num">01</span>
               <div className="pillar-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 22, height: 22 }}>
@@ -72,8 +73,8 @@ export default function Home() {
               </div>
               <h3 className="pillar-title">Professionalism</h3>
               <p className="pillar-body">Every member of our team is trained to the highest standards. We bring professional rigour to every interaction, every support plan, and every outcome.</p>
-            </div>
-            <div className="pillar-card reveal reveal-d2">
+            </GlowCard>
+            <GlowCard className="reveal reveal-d2" innerClassName="pillar-card">
               <span className="pillar-num">02</span>
               <div className="pillar-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 22, height: 22 }}>
@@ -82,8 +83,8 @@ export default function Home() {
               </div>
               <h3 className="pillar-title">Empowerment</h3>
               <p className="pillar-body">We don&apos;t create dependency — we build capability. Our coaching model is designed to give residents the skills and confidence to live truly independently.</p>
-            </div>
-            <div className="pillar-card reveal reveal-d3">
+            </GlowCard>
+            <GlowCard className="reveal reveal-d3" innerClassName="pillar-card">
               <span className="pillar-num">03</span>
               <div className="pillar-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 22, height: 22 }}>
@@ -92,7 +93,7 @@ export default function Home() {
               </div>
               <h3 className="pillar-title">Safety</h3>
               <p className="pillar-body">From our separation of care model to smart-home technology, we ensure every resident lives in a safe, comfortable, and dignified environment at all times.</p>
-            </div>
+            </GlowCard>
           </div>
         </div>
       </section>

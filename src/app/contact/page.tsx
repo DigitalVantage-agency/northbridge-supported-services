@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import BoxesBackground from '@/components/BoxesBackground';
 import ScrollReveal from '@/components/ScrollReveal';
+import GlowCard from '@/components/GlowCard';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -27,7 +28,7 @@ export default function Contact() {
       <section className="section bg-green on-dark">
         <div className="container">
           <div style={{ maxWidth: 680, margin: '0 auto' }}>
-            <div className="contact-form-card reveal">
+            <GlowCard className="reveal" innerClassName="contact-form-card">
               <h3>Send Us a Message</h3>
 
               {submitted ? (
@@ -72,7 +73,7 @@ export default function Contact() {
                   </p>
                 </form>
               )}
-            </div>
+            </GlowCard>
           </div>
         </div>
       </section>

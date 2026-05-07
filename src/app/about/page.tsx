@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import BoxesBackground from '@/components/BoxesBackground';
 import ScrollReveal from '@/components/ScrollReveal';
+import GlowCard from '@/components/GlowCard';
 
 export const metadata: Metadata = {
   title: 'About NorthBridge | Leading Supported Living Provider in Leeds',
@@ -54,7 +55,7 @@ export default function About() {
               <p className="reveal reveal-d2">This approach gives residents the stability of a consistent, familiar home environment whilst ensuring they always receive the appropriate level of care from the most suitable professionals.</p>
 
               <div className="model-cards reveal reveal-d2">
-                <div className="model-card">
+                <GlowCard innerClassName="model-card">
                   <div className="model-card-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 20, height: 20 }}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
@@ -64,8 +65,8 @@ export default function About() {
                     <h4>Independent Living Coaches</h4>
                     <p>Our team does not just assist — they mentor and coach individuals toward total self-reliance. Every interaction is intentionally designed to build capability, not dependency.</p>
                   </div>
-                </div>
-                <div className="model-card">
+                </GlowCard>
+                <GlowCard innerClassName="model-card">
                   <div className="model-card-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 20, height: 20 }}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" />
@@ -75,8 +76,8 @@ export default function About() {
                     <h4>Strategic Partnerships</h4>
                     <p>When personal care is required, we facilitate warm referrals to external CQC-registered providers, ensuring a seamless, dignified experience for the resident at every stage.</p>
                   </div>
-                </div>
-                <div className="model-card">
+                </GlowCard>
+                <GlowCard innerClassName="model-card">
                   <div className="model-card-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 20, height: 20 }}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -86,7 +87,7 @@ export default function About() {
                     <h4>Housing-Related Support</h4>
                     <p>All our services fall within non-regulated housing-related support. This distinction is central to our model — ensuring clarity, transparency, and the right boundaries for both staff and residents.</p>
                   </div>
-                </div>
+                </GlowCard>
               </div>
 
               <h3 className="reveal" style={{ marginTop: 48 }}>Our Commitment to Leeds</h3>
@@ -105,7 +106,7 @@ export default function About() {
             <h2 className="section-title">Our Core Values</h2>
           </div>
           <div className="pillars-grid">
-            <div className="pillar-card reveal reveal-d1">
+            <GlowCard className="reveal reveal-d1" innerClassName="pillar-card">
               <span className="pillar-num">01</span>
               <div className="pillar-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 22, height: 22 }}>
@@ -114,8 +115,8 @@ export default function About() {
               </div>
               <h3 className="pillar-title">Dignity</h3>
               <p className="pillar-body">Every resident is treated with unconditional respect. We create environments where people feel valued, heard, and in control of their own lives.</p>
-            </div>
-            <div className="pillar-card reveal reveal-d2">
+            </GlowCard>
+            <GlowCard className="reveal reveal-d2" innerClassName="pillar-card">
               <span className="pillar-num">02</span>
               <div className="pillar-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 22, height: 22 }}>
@@ -125,8 +126,8 @@ export default function About() {
               </div>
               <h3 className="pillar-title">Transparency</h3>
               <p className="pillar-body">Clear communication, honest expectations, and professional accountability are non-negotiable. Residents, families, and referrers can always trust what we say.</p>
-            </div>
-            <div className="pillar-card reveal reveal-d3">
+            </GlowCard>
+            <GlowCard className="reveal reveal-d3" innerClassName="pillar-card">
               <span className="pillar-num">03</span>
               <div className="pillar-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 22, height: 22 }}>
@@ -135,7 +136,7 @@ export default function About() {
               </div>
               <h3 className="pillar-title">Progress</h3>
               <p className="pillar-body">Our success is measured by the independence of those we support. Every support plan is forward-looking, goal-driven, and celebrates every step forward.</p>
-            </div>
+            </GlowCard>
           </div>
         </div>
       </section>

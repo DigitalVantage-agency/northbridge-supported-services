@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import BoxesBackground from '@/components/BoxesBackground';
 import ScrollReveal from '@/components/ScrollReveal';
+import GlowCard from '@/components/GlowCard';
 
 export const metadata: Metadata = {
   title: 'Independent Living Services Leeds | NorthBridge Support Services',
@@ -104,11 +105,11 @@ export default function Services() {
 
           <div className="services-grid">
             {services.map((s, i) => (
-              <div key={i} className={`service-card reveal ${delayClasses[i % 3]}`}>
+              <GlowCard key={i} className={`reveal ${delayClasses[i % 3]}`} innerClassName="service-card">
                 <div className="service-icon-wrap">{s.icon}</div>
                 <h3 className="service-title">{s.title}</h3>
                 <p className="service-desc">{s.desc}</p>
-              </div>
+              </GlowCard>
             ))}
           </div>
 
@@ -127,7 +128,7 @@ export default function Services() {
             <p className="section-body" style={{ margin: '16px auto 0', textAlign: 'center', maxWidth: 580 }}>Like scaffolding on a building, our support is strong, structured, and purposeful — and designed to be removed once the work is done.</p>
           </div>
           <div className="pillars-grid" style={{ marginTop: 56 }}>
-            <div className="pillar-card reveal reveal-d1">
+            <GlowCard className="reveal reveal-d1" innerClassName="pillar-card">
               <span className="pillar-num">01</span>
               <div className="pillar-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 22, height: 22 }}>
@@ -136,8 +137,8 @@ export default function Services() {
               </div>
               <h3 className="pillar-title">Assess</h3>
               <p className="pillar-body">We begin with a thorough assessment of each individual&apos;s strengths, challenges, goals, and circumstances — building a detailed picture before any support begins.</p>
-            </div>
-            <div className="pillar-card reveal reveal-d2">
+            </GlowCard>
+            <GlowCard className="reveal reveal-d2" innerClassName="pillar-card">
               <span className="pillar-num">02</span>
               <div className="pillar-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 22, height: 22 }}>
@@ -146,8 +147,8 @@ export default function Services() {
               </div>
               <h3 className="pillar-title">Plan</h3>
               <p className="pillar-body">A bespoke support plan is created in partnership with the resident, outlining specific goals, milestones, and the coaching interventions that will help achieve them.</p>
-            </div>
-            <div className="pillar-card reveal reveal-d3">
+            </GlowCard>
+            <GlowCard className="reveal reveal-d3" innerClassName="pillar-card">
               <span className="pillar-num">03</span>
               <div className="pillar-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ width: 22, height: 22 }}>
@@ -156,7 +157,7 @@ export default function Services() {
               </div>
               <h3 className="pillar-title">Empower</h3>
               <p className="pillar-body">Coaches work alongside residents — not for them — building real skills and genuine confidence, until independence is not just possible but sustainable.</p>
-            </div>
+            </GlowCard>
           </div>
         </div>
       </section>
