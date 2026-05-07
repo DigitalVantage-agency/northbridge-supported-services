@@ -78,6 +78,10 @@ export default function HeroSlider() {
           />
         ))}
       </div>
+
+      <div className="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+      </div>
     </section>
   );
 }
