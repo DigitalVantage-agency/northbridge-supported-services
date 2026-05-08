@@ -566,6 +566,16 @@ ul { list-style: none; }
   border-color: rgba(243,247,243,0.14);
 }
 
+/* Model cards on dark Philosophy section → white card, forest text */
+.on-dark .model-cards .glow-card { --gc-bg: var(--clr-lime); }
+.on-dark .model-card h4 { color: var(--clr-dark); }
+.on-dark .model-card p  { color: rgba(57,86,60,0.78); }
+.on-dark .model-card-icon {
+  background: rgba(57,86,60,0.08);
+  color: var(--clr-dark);
+  border-color: rgba(57,86,60,0.16);
+}
+
 /* ━━━ SPLIT ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .split { display: grid; grid-template-columns: 1fr 1fr; min-height: 580px; }
 .split-image { position: relative; overflow: hidden; }
