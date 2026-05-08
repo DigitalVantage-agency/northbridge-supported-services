@@ -576,6 +576,16 @@ ul { list-style: none; }
   border-color: rgba(57,86,60,0.16);
 }
 
+/* Service cards on dark section → white card, forest text */
+.on-dark .services-grid .glow-card { --gc-bg: var(--clr-lime); }
+.on-dark .service-title { color: var(--clr-dark); }
+.on-dark .service-desc  { color: rgba(57,86,60,0.78); }
+.on-dark .service-icon-wrap {
+  background: rgba(57,86,60,0.08);
+  color: var(--clr-dark);
+  border-color: rgba(57,86,60,0.16);
+}
+
 /* ━━━ SPLIT ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .split { display: grid; grid-template-columns: 1fr 1fr; min-height: 580px; }
 .split-image { position: relative; overflow: hidden; }
