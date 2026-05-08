@@ -188,45 +188,33 @@ ul { list-style: none; }
 .nav-logo span { color: var(--clr-dark-raised); }
 #nav.scrolled .nav-logo span { color: rgba(243,247,243,0.65); }
 
-/* ── Desktop links (nav-header sliding cursor pattern) ──── */
+/* ── Desktop links ───────────────────────────────────────── */
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2px;
-  margin-right: 16px;
-  padding: 0;
-  position: relative;      /* contains the absolute cursor */
-  list-style: none;
-  align-self: stretch;     /* fill full 52px pill height → lets cursor centre cleanly */
-}
-.nav-links li {
-  position: relative;
-  z-index: 1;              /* above the sliding cursor */
-  display: flex;
-  align-items: center;
+  gap: 28px;
+  margin-right: 24px;
 }
 .nav-links a {
-  display: block;
-  font-size: 0.72rem;
+  font-size: 0.73rem;
   font-weight: 500;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(57,86,60,0.60);
-  text-shadow: 0 1px 4px rgba(243,247,243,0.65);
-  transition: color 0.2s var(--ease), text-shadow 0.2s var(--ease);
+  color: rgba(57,86,60,0.55);
+  text-shadow: 0 1px 4px rgba(243,247,243,0.7);
+  transition: color 0.2s, text-shadow 0.2s;
   white-space: nowrap;
   position: relative;
-  padding: 6px 14px;
+  padding-bottom: 2px;
 }
 #nav.scrolled .nav-links a {
-  color: rgba(243,247,243,0.58);
+  color: rgba(243,247,243,0.55);
   text-shadow: none;
 }
-/* Active dot */
 .nav-links a::after {
   content: '';
   position: absolute;
-  bottom: 2px;
+  bottom: -6px;
   left: 50%;
   transform: translateX(-50%) scale(0);
   width: 4px;
@@ -241,29 +229,6 @@ ul { list-style: none; }
 #nav.scrolled .nav-links a:hover,
 #nav.scrolled .nav-links a.active { color: var(--clr-lime); }
 .nav-links a.active::after { transform: translateX(-50%) scale(1); }
-
-/* ── Sliding cursor pill ─────────────────────────────────────
-   NO transform: translateY() here — Framer Motion owns the
-   transform property on motion.* elements and would silently
-   discard it. Vertical centring is handled by top/bottom/margin
-   so FM only needs to animate left, width, opacity.            */
-.nav-cursor {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;            /* vertically centres within the stretch-filled ul */
-  height: 32px;
-  border-radius: var(--r-pill);
-  background: rgba(57, 86, 60, 0.13);
-  border: 1px solid rgba(57, 86, 60, 0.20);
-  pointer-events: none;
-  list-style: none;
-}
-#nav.scrolled .nav-cursor {
-  background: rgba(243, 247, 243, 0.13);
-  border-color: rgba(243, 247, 243, 0.18);
-}
 
 /* ── CTA pill-inside-pill ────────────────────────────────── */
 .nav-cta {
