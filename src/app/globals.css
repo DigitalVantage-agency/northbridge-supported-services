@@ -903,10 +903,42 @@ footer {
   .services-grid { grid-template-columns: repeat(2,1fr); }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 48px; }
 }
+/* Tablet & mobile — strip pill down to a lone hamburger button */
+@media (max-width: 1024px) {
+  .nav-pill {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding: 0;
+    height: auto;
+    top: 16px;
+    left: auto;
+    right: 16px;
+    transform: none;
+  }
+  #nav.scrolled .nav-pill {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  .nav-logo,
+  .nav-links,
+  .nav-cta { display: none; }
+  .nav-hamburger {
+    display: flex;
+    background: var(--clr-dark);
+    border: 1px solid rgba(243,247,243,0.14);
+    box-shadow: 0 4px 20px rgba(57,86,60,0.30);
+    margin-left: 0;
+  }
+  .nav-hamburger span { background: var(--clr-lime); }
+  .nav-hamburger:hover { background: var(--clr-dark-raised); }
+}
+
 @media (max-width: 768px) {
   :root { --section-py: 88px; --nav-h: 72px; }
-  .nav-links { display: none; }
-  .nav-hamburger { display: flex; }
   .split { grid-template-columns: 1fr; }
   .split-image { aspect-ratio: 4/3; }
   .pillars-grid { grid-template-columns: 1fr; gap: 16px; }
