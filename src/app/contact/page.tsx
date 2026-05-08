@@ -28,13 +28,13 @@ export default function Contact() {
 
               {submitted ? (
                 <div style={{ textAlign: 'center', padding: '40px 0' }}>
-                  <div style={{ width: 64, height: 64, borderRadius: '50%', background: 'rgba(202,204,144,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px', fontSize: '1.6rem', color: 'var(--clr-sage)' }}>
+                  <div style={{ width: 64, height: 64, borderRadius: '50%', background: 'rgba(57,86,60,0.10)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px', fontSize: '1.6rem', color: 'var(--clr-dark)' }}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" style={{ width: 28, height: 28 }}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
                   </div>
-                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', fontWeight: 400, color: 'var(--clr-white)', marginBottom: 12 }}>Message Received</h3>
-                  <p style={{ fontSize: '0.95rem', color: 'rgba(246,244,240,0.6)', lineHeight: 1.7 }}>Thank you for reaching out. A member of our team will be in touch within one business day.</p>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', fontWeight: 400, color: 'var(--clr-dark)', marginBottom: 12 }}>Message Received</h3>
+                  <p style={{ fontSize: '0.95rem', color: 'rgba(57,86,60,0.70)', lineHeight: 1.7 }}>Thank you for reaching out. A member of our team will be in touch within one business day.</p>
                 </div>
               ) : (
                 <form onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}>

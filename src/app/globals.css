@@ -586,6 +586,27 @@ ul { list-style: none; }
   border-color: rgba(57,86,60,0.16);
 }
 
+/* Contact form card on dark section → white card, forest text */
+.on-dark .glow-card:has(.contact-form-card) { --gc-bg: var(--clr-lime); }
+.on-dark .contact-form-card h3 { color: var(--clr-dark); }
+.on-dark .contact-form-card label { color: rgba(57,86,60,0.70); }
+.on-dark .contact-form-card input,
+.on-dark .contact-form-card select,
+.on-dark .contact-form-card textarea {
+  background: rgba(57,86,60,0.05);
+  border-color: rgba(57,86,60,0.16);
+  color: var(--clr-dark);
+}
+.on-dark .contact-form-card input::placeholder,
+.on-dark .contact-form-card textarea::placeholder { color: rgba(57,86,60,0.34); }
+.on-dark .contact-form-card input:focus,
+.on-dark .contact-form-card textarea:focus,
+.on-dark .contact-form-card select:focus {
+  border-color: rgba(57,86,60,0.50);
+  background: rgba(57,86,60,0.08);
+  box-shadow: 0 0 0 3px rgba(57,86,60,0.10);
+}
+
 /* ━━━ SPLIT ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .split { display: grid; grid-template-columns: 1fr 1fr; min-height: 580px; }
 .split-image { position: relative; overflow: hidden; }
